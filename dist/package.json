@@ -1,0 +1,34 @@
+{
+  "name": "grain-sand-web-fs",
+  "description": "A wrapper for the browser frontend targeting the Origin Private File System (OPFS), including TypeScript type definitions and convenient file read/write functionalities that aim to be compatible with various browsers.",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "grain-sand-base": "0.1.5"
+  },
+  "license": "MIT",
+  "keywords": [
+    "file api",
+    "file system",
+    "OPFS",
+    "Origin Private File System",
+    "file read/write",
+    "browser file system",
+    "web file system"
+  ],
+  "homepage": "https://gitee.com/grain-sand/grain-sand-web-fs",
+  "preferred-homepages": [
+    "https://github.com/grain-sand/grain-sand-web-fs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grain-sand/grain-sand-web-fs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
