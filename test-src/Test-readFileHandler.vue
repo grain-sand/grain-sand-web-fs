@@ -46,7 +46,7 @@
 
 <script lang="ts" setup>
 import {reactive, ref} from "vue";
-import {readFile, readFileHandler, BlobTypes} from "../dist";
+import {BlobTypes, readFileHandler} from "../dist";
 
 const imgDiv = ref<HTMLDivElement>(null);
 const svgDiv = ref<HTMLDivElement>(null);

@@ -7,7 +7,7 @@
     <hr/>
     <button @click="selectFileWriteImage">测试写入图片</button>
     <button @click="readImage">测试读取图片</button>
-    <img ref="imgEl">
+    <img ref="imgEl" alt="测试">
   </div>
 </template>
 
