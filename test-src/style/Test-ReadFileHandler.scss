@@ -1,0 +1,27 @@
+.Test-ReadFileHandler, .Test-ReadFile {
+  display: flex;
+  flex-flow: row wrap;
+  resize: none;
+
+  > fieldset {
+	border-radius: 10px;
+	display: flex;
+	flex-flow: nowrap column;
+
+	> :last-child {
+	  height: 200px;
+	  resize: none;
+
+	  > img {
+		max-width: 100%;
+		max-height: 80%
+	  }
+	}
+
+	> div:last-child {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	}
+  }
+}

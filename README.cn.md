@@ -7,15 +7,12 @@
 ```shell
 npx yarn add grain-sand-web-fs
 ```
-或直接引用
-```ts
-// import {} from 'https://cdn.jsdelivr.net/npm/grain-sand-web-fs/lib/index.web.js'
-import {} from 'https://cdn.jsdmirror.cn/npm/grain-sand-web-fs/lib/index.web.js'
-```
 
 ## 使用
 ### 浏览器兼容的API
 ```ts
+
+import {openFile,readFile,saveFile} from 'https://cdn.jsdmirror.cn/npm/grain-sand-web-fs/lib/index.web.js'
 
 //打开图片文件
 const imageFile:File = await openFile({description:'图片文件',access:'.png'})
@@ -31,10 +28,14 @@ await saveFile('保存.txt',content,'downloads')
 
 //将图片文件保存到下载
 await saveFile('保存.png',imageFile,'downloads')
+
 ```
 
 ### 使用新式API,仅兼容Chrome、Edge、Opera
 ```ts
+
+import {openDirectoryHandler,readFileHandler,saveFileHandler} from 'https://cdn.jsdmirror.cn/npm/grain-sand-web-fs/lib/index.web.js'
+
 //从桌面打开目录
 const dirHandler:FileSystemDirectoryHandle = await openDirectoryHandler('desktop')
 

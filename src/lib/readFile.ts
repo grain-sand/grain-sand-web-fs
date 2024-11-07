@@ -1,8 +1,9 @@
 import {ISingleFilePickerOptions} from "../opfs";
 import {openFile} from "./openFile";
-import {Base64DataURL, BlobTypes, EncodingType, formatBytes, readBlob} from "grain-sand-base";
 import {FileOpenAccept, IFileData} from "../next-lib";
-import {DefaultReadMaxSize, FileSizeError} from "../error/FileSizeError";
+import {DefaultReadMaxSize, FileSizeError} from "../error";
+import {Base64DataURL, BlobTypes, readBlob} from "grain-sand-data";
+import {EncodingType} from "grain-sand-base";
 
 export type ReadFile = File | FileOpenAccept | ISingleFilePickerOptions | FileSystemFileHandle
 
@@ -22,14 +23,6 @@ export function readFile(type: BlobTypes.Text, file?: ReadFile, maxSize?: number
  * @param maxSize 允许读取文件的最大大小,单位为字节,默认为20M字节; 当文件大小超过此值时会抛出FileSizeError
  */
 export function readFile(type: BlobTypes.Base64, file?: ReadFile, maxSize?: number): Promise<IFileData<Base64DataURL> | undefined>;
-
-/**
- * 将文件内容加载到缓存
- * @param type
- * @param file
- * @param maxSize 允许读取文件的最大大小,单位为字节,默认为20M字节; 当文件大小超过此值时会抛出FileSizeError
- */
-export function readFile(type: BlobTypes.Buffer, file?: ReadFile, maxSize?: number): Promise<IFileData<ArrayBuffer> | undefined>;
 
 /**
  * 读取图片内容,并创建HTMLImageElement

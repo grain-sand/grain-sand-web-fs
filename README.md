@@ -11,18 +11,14 @@
 npx yarn add grain-sand-web-fs
 ```
 
-or directly import
-
-```ts
-// import {} from 'https://cdn.jsdelivr.net/npm/grain-sand-web-fs/lib/index.web.js'
-import {} from 'https://cdn.jsdmirror.cn/npm/grain-sand-web-fs/lib/index.web.js'
-```
-
 ## Usage
 
 ### Browser-compatible API
 
 ```ts
+
+import {openFile,readFile,saveFile} from 'https://cdn.jsdelivr.net/npm/grain-sand-web-fs/lib/index.web.js'
+
 // Open an image file
 const imageFile: File = await openFile({description: 'Image file', access: '.png'})
 
@@ -37,11 +33,15 @@ await saveFile('save.txt', content, 'downloads')
 
 // Save the image file to downloads
 await saveFile('save.png', imageFile, 'downloads')
+
 ```
 
 ### Using the new API (compatible only with Chrome, Edge, Opera)
 
 ```ts
+
+import {openDirectoryHandler,readFileHandler,saveFileHandler} from 'https://cdn.jsdelivr.net/npm/grain-sand-web-fs/lib/index.web.js'
+
 // Open a directory from the desktop
 const dirHandler: FileSystemDirectoryHandle = await openDirectoryHandler('desktop')
 
@@ -59,6 +59,7 @@ await saveFileHandler('save.txt', text, 'downloads')
 
 // Save the image file to downloads
 await saveFileHandler('save.png', await imageFile.getFile(), 'downloads')
+
 ```
 
 ### Enable "Origin Private File API" type hints in TypeScript

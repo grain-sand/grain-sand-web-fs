@@ -4,10 +4,12 @@
   "scripts": {
     "build": "rollup -c",
     "build-watch": "rollup -c --watch",
-    "test": "vite"
+    "test": "vite",
+    "npm:publish": "cd dist && npm publish --registry https://registry.npmjs.org/ --access public"
   },
   "dependencies": {
-    "grain-sand-base": "0.1.5"
+    "grain-sand-base": "0.1.7",
+    "grain-sand-data": "^0.1.1"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",

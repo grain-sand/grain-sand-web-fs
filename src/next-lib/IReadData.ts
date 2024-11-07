@@ -1,4 +1,4 @@
-import {Base64DataURL} from "grain-sand-base";
+import {Base64DataURL} from "grain-sand-data";
 
 export type FileSuffix = `.${string}`;
 

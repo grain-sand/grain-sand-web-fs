@@ -1,7 +1,8 @@
-import {Base64DataURL, BlobTypes, EncodingType, readBlob} from "grain-sand-base";
 import {IFileHandlerData} from "../next-lib";
 import {openStoreFile} from "./openStoreFile";
-import {FileNotFoundError,FileSizeError} from "../error";
+import {FileNotFoundError, FileSizeError} from "../error";
+import {Base64DataURL, BlobTypes, readBlob} from "grain-sand-data";
+import {EncodingType} from "grain-sand-base";
 
 /**
  * 读取文本文件内容
@@ -27,18 +28,6 @@ export function readStoreFile(type: BlobTypes.Text, readStoreFile: string | File
  * @param maxSize 允许读取文件的最大大小,单位为字节,默认为20M字节; 当文件大小超过此值时会抛出FileSizeError
  */
 export function readStoreFile(type: BlobTypes.Base64, readStoreFile: string | FileSystemFileHandle, maxSize?: number): Promise<IFileHandlerData<Base64DataURL> | undefined>;
-
-/**
- * 将文件内容加载到缓存
- *
- * @throws FileSizeError 当文件大小超过maxSize时会抛出
- * @throws FileNotFoundError 当文件不存在时会抛出
- *
- * @param type
- * @param readStoreFile
- * @param maxSize 允许读取文件的最大大小,单位为字节,默认为20M字节; 当文件大小超过此值时会抛出FileSizeError
- */
-export function readStoreFile(type: BlobTypes.Buffer, readStoreFile: string | FileSystemFileHandle, maxSize?: number): Promise<IFileHandlerData<ArrayBuffer> | undefined>;
 
 /**
  * 读取图片内容,并创建HTMLImageElement

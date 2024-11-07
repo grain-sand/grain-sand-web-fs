@@ -1036,11 +1036,17 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.npmmirror.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
-grain-sand-base@0.1.5:
-  version "0.1.5"
-  resolved "https://registry.npmmirror.com/grain-sand-base/-/grain-sand-base-0.1.5.tgz#c03558ca78390a126c676ddcb92fa47226faafa7"
-  integrity sha512-4rIcZlVPJMikKLCjBBsljKf2VYTtOPiZnf7uZHj+KO7Ajq2kSqojG2+blLZ4sMtAKrL2PZkbCgCGBN5sZV6y3Q==
+grain-sand-base@0.1.7, grain-sand-base@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.npmmirror.com/grain-sand-base/-/grain-sand-base-0.1.7.tgz#a895e06993b8dece90e781d1cc7ebc0a445ec8ac"
+  integrity sha512-JB6VOOMwFIArBbTAHIqk5m1X0jzF28xLDM17HLdGQEtwzWXicIQBBuGgSnPzdPVQcDaqgV92LUQjn2CvMFtoSQ==
+
+grain-sand-data@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/grain-sand-data/-/grain-sand-data-0.1.1.tgz#b1edfc1c6177b8282ce73adf83c808bd4ce33e7d"
+  integrity sha512-4oBNWTbXTHWVx0vEB8rtvCe5smyHa/xSxR2CANVI7c9qpUaXqDcuWZzvFZlzEEJEcMVUDoNJhpGDVWyFdbMnGA==
   dependencies:
+    grain-sand-base "^0.1.7"
     js-base64 "^3.7.7"
 
 hasown@^2.0.2:
@@ -1119,7 +1125,7 @@ is-plain-object@^3.0.0:
 
 js-base64@^3.7.7:
   version "3.7.7"
-  resolved "https://registry.npmmirror.com/js-base64/-/js-base64-3.7.7.tgz#e51b84bf78fbf5702b9541e2cb7bfcb893b43e79"
+  resolved "https://registry.npmjs.org/js-base64/-/js-base64-3.7.7.tgz#e51b84bf78fbf5702b9541e2cb7bfcb893b43e79"
   integrity sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==
 
 js-tokens@^4.0.0:

@@ -1,8 +1,9 @@
-import {Base64DataURL, BlobTypes, EncodingType, formatBytes, readBlob} from "grain-sand-base";
 import {IFileHandlerData} from "./IReadData";
 import {FileOpenAccept, openFileHandler} from "./openFileHandler";
 import {ISingleFilePickerOptions} from "../opfs";
-import {DefaultReadMaxSize, FileSizeError} from "../error/FileSizeError";
+import {DefaultReadMaxSize, FileSizeError} from "../error";
+import {BlobTypes, Base64DataURL, readBlob} from "grain-sand-data";
+import {EncodingType} from "grain-sand-base";
 
 export type ReadFileHandler = FileSystemFileHandle | FileOpenAccept | ISingleFilePickerOptions;
 
@@ -29,16 +30,6 @@ export function readFileHandler(type: BlobTypes.Text, readFileHandler?: ReadFile
  */
 export function readFileHandler(type: BlobTypes.Base64, readFileHandler?: ReadFileHandler, maxSize?: number): Promise<IFileHandlerData<Base64DataURL> | undefined>;
 
-/**
- * 将文件内容加载到缓存
- *
- * @warning 不兼容Firefox、Safari与移动端
- *
- * @param type
- * @param readFileHandler
- * @param maxSize 允许读取文件的最大大小,单位为字节,默认为20M字节; 当文件大小超过此值时会抛出FileSizeError
- */
-export function readFileHandler(type: BlobTypes.Buffer, readFileHandler?: ReadFileHandler, maxSize?: number): Promise<IFileHandlerData<ArrayBuffer> | undefined>;
 
 /**
  * 读取图片内容,并创建HTMLImageElement
