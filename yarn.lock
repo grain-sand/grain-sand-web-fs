@@ -1041,10 +1041,10 @@ grain-sand-base@0.1.7, grain-sand-base@^0.1.7:
   resolved "https://registry.npmmirror.com/grain-sand-base/-/grain-sand-base-0.1.7.tgz#a895e06993b8dece90e781d1cc7ebc0a445ec8ac"
   integrity sha512-JB6VOOMwFIArBbTAHIqk5m1X0jzF28xLDM17HLdGQEtwzWXicIQBBuGgSnPzdPVQcDaqgV92LUQjn2CvMFtoSQ==
 
-grain-sand-data@0.1.2:
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/grain-sand-data/-/grain-sand-data-0.1.2.tgz#8b08b93ef00c652529ce6d1f1b9d962bebfbdde2"
-  integrity sha512-8DhLJFvr4qy1MC9zdEabY8hOE4Sq2Ep27BR85/ZrxkzuUxsV+6G2YKgB3aPpnufePlr7c/fmdBSiXLCtsB1Ewg==
+grain-sand-data@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.npmjs.org/grain-sand-data/-/grain-sand-data-0.1.4.tgz#409edc55375fc4e9f93e434515907ff94cfe8552"
+  integrity sha512-VVxxGh7JYJIj1qC2Y69MPUl9eGklavz/kN/T8P51Or51bDKtOa0/g2VfGSOxgJDnkGNZApKYYfda+qsz71xyTQ==
   dependencies:
     grain-sand-base "^0.1.7"
     js-base64 "^3.7.7"
