@@ -1,6 +1,6 @@
 {
   "name": "grain-sand-web-fs-dev",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "scripts": {
     "build": "rollup -c",
     "build-watch": "rollup -c --watch",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "grain-sand-base": "0.1.7",
-    "grain-sand-data": "0.1.4"
+    "grain-sand-data": "0.1.5"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
