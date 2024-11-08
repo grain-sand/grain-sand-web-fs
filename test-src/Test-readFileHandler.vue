@@ -46,7 +46,8 @@
 
 <script lang="ts" setup>
 import {reactive, ref} from "vue";
-import {BlobTypes, readFileHandler} from "../dist";
+import {readFileHandler} from "../dist";
+import {BlobTypes} from "grain-sand-data";
 
 const imgDiv = ref<HTMLDivElement>(null);
 const svgDiv = ref<HTMLDivElement>(null);

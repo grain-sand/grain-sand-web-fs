@@ -12,8 +12,9 @@
 </template>
 
 <script lang="ts" setup>
-import {BlobTypes, openFile, readStoreFile, saveStoreFile} from "../dist";
+import {openFile, readStoreFile, saveStoreFile} from "../dist";
 import {ref} from "vue";
+import {BlobTypes} from "grain-sand-data";
 
 const imgEl = ref<HTMLImageElement>();
 
