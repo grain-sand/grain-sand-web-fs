@@ -8,7 +8,7 @@ import copy from 'rollup-plugin-copy'
 
 const input = 'src/index.ts'
 
-const external = ['grain-sand-base']
+const external = ['grain-sand-base','grain-sand-data']
 
 const tsConfig = {
 	respectExternal: true,
