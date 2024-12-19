@@ -9,6 +9,6 @@ import {StartInType} from "../opfs";
  * @param mode
  * @param id
  */
-export function openDirectoryHandler(startInOrHandler?: StartInType, mode: "read" | "readwrite" = "read", id?: string) {
+export function openDirectoryHandler(startInOrHandler?: StartInType, mode: "read" | "readwrite" = "read", id?: string): Promise<FileSystemDirectoryHandle> {
 	return (globalThis as any).showDirectoryPicker({startInOrHandler, mode, id});
 }

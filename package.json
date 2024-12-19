@@ -1,6 +1,6 @@
 {
   "name": "grain-sand-web-fs-dev",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "scripts": {
     "build": "rollup -c",
     "build-watch": "rollup -c --watch",

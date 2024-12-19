@@ -12,7 +12,7 @@ const external = ['grain-sand-base','grain-sand-data']
 
 const tsConfig = {
 	respectExternal: true,
-	exclude: ["test-src/**/*.ts"],
+	exclude: ["test/**/*.ts"],
 }
 
 const output = (suffix) => ({

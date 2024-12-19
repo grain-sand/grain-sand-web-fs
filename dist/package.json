@@ -1,13 +1,13 @@
 {
   "name": "grain-sand-web-fs",
   "description": "A wrapper for the browser frontend targeting the Origin Private File System (OPFS), including TypeScript type definitions and convenient file read/write functionalities that aim to be compatible with various browsers.",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "type": "module",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
-    "grain-sand-base": "*",
+    "grain-sand-base": "latest",
     "grain-sand-data": "latest"
   },
   "license": "MIT",
